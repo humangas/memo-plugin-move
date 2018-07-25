@@ -22,4 +22,5 @@ deps: setup
 
 install: deps
 	GOOS=darwin go build -o move *.go
+	mkdir -p $(PLUGIN_DIR)
 	mv move $(PLUGIN_DIR)
